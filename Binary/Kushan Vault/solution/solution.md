@@ -11,7 +11,7 @@ This challenge presents a classic stack-based buffer overflow vulnerability in a
 
 ## Vulnerability Analysis
 
-### The Bug
+### The Vulnerability
 
 This program contains **a critical vulnerabilities**:
 
